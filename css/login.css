@@ -1,0 +1,55 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background: #fcfcfc;
+}
+
+.btn,
+.btn-primary,
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:visited{
+    background-color: #BD200F !important;
+    border: 0 !important;
+}
+
+.btn-primary:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 90, 90, 0.723);
+}
+
+.btn-primary:hover {
+    background-color: #a01101 !important;
+    border: 0 !important;
+    
+}
+
+section {
+    position: relative;
+}
+
+.custom-shape-divider-top-1651513860 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1651513860 svg {
+    position: relative;
+    display: block;
+    width: calc(119% + 1.3px);
+    height: 359px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1651513860 .shape-fill {
+    fill: #BD200F;
+}
+
+
