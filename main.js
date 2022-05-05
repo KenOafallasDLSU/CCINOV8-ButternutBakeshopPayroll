@@ -22,8 +22,10 @@ function createWindow () {
     }
   })
 
-  mainWindow.loadURL(newHandlebars.render('index.hbs', {
-      message: "Catra x Adora forever!!"
+  mainWindow.loadURL(newHandlebars.render('login.hbs', {
+      message: "Catra x Adora forever!!",
+      title: "Login",
+      css_ref: "../../assets/css/login.css"
     })
   );
 
