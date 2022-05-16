@@ -28,7 +28,7 @@ function createWindow () {
       css_ref: "../../assets/css/login.css"
     })
   );
-
+  
   mainWindow.on("closed", () => {
     app.quit()
   });
