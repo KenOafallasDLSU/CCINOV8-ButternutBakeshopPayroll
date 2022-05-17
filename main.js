@@ -22,10 +22,15 @@ function createWindow () {
     }
   })
 
-  mainWindow.loadURL(newHandlebars.render('login.hbs', {
+  /*mainWindow.loadURL(newHandlebars.render('login.hbs', {
       message: "Catra x Adora forever!!",
       title: "Login",
       css_ref: "../../assets/css/login.css"
+    })
+  );*/
+  
+  mainWindow.loadURL(newHandlebars.render('admin-facing.hbs', {
+      css_ref: "../../assets/css/admin-facing.css"
     })
   );
   
