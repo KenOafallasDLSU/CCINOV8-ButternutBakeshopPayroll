@@ -1,0 +1,121 @@
+<!-- Header -->
+<div class="section header d-flex justify-content-between">
+  <img src="../../assets/img/logo.png" alt="logo" class="logo">
+  <h2 class="d-inline">
+    <a id="logout-button" class="logout-button" href="#">Logout</a>
+  </h2>
+</div>
+
+<!-- Production Amount Input -->
+<div class="section">
+  <div class="form-group row">
+    <label for="inputAmount" class="col-sm-4 col-form-label label">Production Amount</label>
+    <div class="col-sm-4">
+      <input type="password" class="form-control amount-textbox" id="inputAmount" placeholder="0">
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Team Leader Section -->
+<h2 class="section">
+  Team Leader
+</h2>
+
+<div class="input-line section">
+  <div class="d-inline dropdown left">
+    <button class="btn btn-secondary dropdown-toggle dropdown-styler" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Pumili ng Empleyado
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="#">Test</a>
+      {{#each employees}}
+        <a class="dropdown-item" href="#">{{this.name}}</a>
+      {{/each}}
+    </div>
+  </div>
+
+  <div class="d-inline dropdown right">
+    <button class="btn btn-secondary dropdown-toggle dropdown-styler" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Pumili ng Trabaho
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="#">Test</a>
+      {{#each roles}}
+        <a class="dropdown-item" href="#">{{this}}</a>
+      {{/each}}
+    </div>
+  </div>
+</div>
+
+<!-- Horizontal Line Separator -->
+<hr class="hr-divider section"/>
+
+<!-- Team Members Section -->
+<h2 class="section">
+  Team Members
+</h2>
+
+<div class="input-line section">
+  <div class="d-inline dropdown left">
+    <button class="btn btn-secondary dropdown-toggle dropdown-styler" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Pumili ng Empleyado
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      {{#each employees}}
+        <option value="{{this}}">{{this.name}}</option>
+      {{/each}}
+    </div>
+  </div>
+
+  <div class="d-inline dropdown right">
+    <button class="btn btn-secondary dropdown-toggle dropdown-styler" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Pumili ng Trabaho
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      {{#each roles}}
+        <option value="{{this}}">{{this}}</option>
+      {{/each}}
+    </div>
+  </div>
+</div>
+
+<div class="input-line section">
+  <div class="d-inline dropdown left">
+    <button class="btn btn-secondary dropdown-toggle dropdown-styler" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Pumili ng Empleyado
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      {{#each employees}}
+        <option value="{{this}}">{{this.name}}</option>
+      {{/each}}
+    </div>
+  </div>
+
+  <div class="d-inline dropdown right">
+    <button class="btn btn-secondary dropdown-toggle dropdown-styler" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Pumili ng Trabaho
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      {{#each roles}}
+        <option value="{{this}}">{{this}}</option>
+      {{/each}}
+    </div>
+  </div>
+</div>
+
+<div class="section d-flex justify-content-between">
+  <!-- Plus Button -->
+  <button type="button" class="btn btn-primary add-button">
+    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+    </svg>
+    Magdagdag ng Empleyado
+  </button>
+
+  <!-- Submit Button -->
+  <button type="button" class="btn btn-primary submit-button">
+    Submit
+  </button>
+</div>

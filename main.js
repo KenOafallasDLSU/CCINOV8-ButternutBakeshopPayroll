@@ -22,12 +22,31 @@ function createWindow () {
     }
   })
 
-  mainWindow.loadURL(newHandlebars.render('login.hbs', {
-      message: "Catra x Adora forever!!",
-      title: "Login",
-      css_ref: "../../assets/css/login.css"
-    })
-  );
+  // mainWindow.loadURL(newHandlebars.render('login.hbs', {
+  //     message: "Catra x Adora forever!!",
+  //     title: "Login",
+  //     css_ref: "../../assets/css/login.css"
+  //   })
+  // );
+
+  mainWindow.loadURL(newHandlebars.render('employee-facing.hbs', {
+        roles: [
+          "Shaper", 
+          "Baker"
+        ],
+        employees: [
+          {name: "Deborah Buhion"},
+          {name: "Michaela Dizon"},
+          {name: "Thea Go"},
+          {name: "Kenneth Oafallas"}
+        ],
+        title: "Employee Facing",
+        css_ref: "../../assets/css/employee-facing.css",
+        js_ref: "../../assets/js/employee-facing.js"
+      })
+    );
+
+  mainWindow.webContents.openDevTools()
 
   mainWindow.on("closed", () => {
     app.quit()
@@ -57,4 +76,15 @@ app.on('window-all-closed', function () {
 // removes all rendered files 
 app.on("quit", () => {
   newHandlebars.clearTemps();
+});
+
+$( "#logout-button" ).click(() => {
+  alert( "Kenneth" );
+  //   window.loadURL(hbs.render('login.hbs', {
+  //     message: "Catra x Adora forever!!",
+  //     title: "Login",
+  //     css_ref: "../../assets/css/login.css"
+  //   })
+  // );
+
 });
